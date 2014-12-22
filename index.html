@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8" />
+	<title>BigData</title>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="styles/skeleton.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/flexslider.css" />
+    <link rel="stylesheet" href="styles/color.css" />
+	<!-- <link rel='stylesheet' href='http://s.xe.com/v2/themes/xe/css/homepage_resp.2v.css' type='text/css' />
+	<script src='http://s.xe.com/v2/themes/xe/js/homepage.2l.js' type='text/javascript'></script>
+    <script src='http://a.tribalfusion.com/tags/real/xecom/universal/tags.js' type='text/javascript'></script>
+    <script src='https://apis.google.com/js/plusone.js' type='text/javascript'></script>	 -->
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/icon-16.png" />
+	<link rel="apple-touch-icon" href="images/icon-16.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="images/icon-72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icon-114.png" />
+    
+    
+	<!-- Demo Switcher
+	================================================== -->
+    <link id="layoutcss" href="styles/fixed-layout.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style-switcher.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel='stylesheet' href='http://s.xe.com/v2/themes/xe/css/homepage_resp.2v.css' type='text/css' /> -->
+
+    <STYLE TYPE="text/css" MEDIA=screen>
+                    .flgBx{clear:both;display:block;height:20px;margin:1px auto;width:24px}
+                    .flgBxPAD{clear:both;display:block;margin:1px auto;padding-top:15px;padding-bottom:2px;text-align:center;width:24px}
+                    .flgBxPOP{clear:both;display:block;float:left;height:20px;margin-right:8px;padding-top:2px;width:24px}
+                    .flgSprt{background:url("http://s.xe.com/v2/themes/xe/images/sprite_global.png") no-repeat scroll 0 0 transparent}
+                    .fUSD{background-position:4px -52px}.fEUR{background-position:-17px -52px}.fGBP{background-position:-38px -52px}
+                    .fINR{background-position:-59px -52px}.fAUD{background-position:-80px -52px}.fCAD{background-position:-101px -52px}
+                    .fZAR{background-position:-122px -52px}.fNZD{background-position:-143px -52px}.fJPY{background-position:-164px -52px}
+                    .fCNY{background-position:-227px -52px}.fCHF{background-position:-206px -52px}.fMYR{background-position:-248px -52px}
+                    .fTHB{background-position:-269px -52px}.fSGD{background-position:-332px -52px}.fSAR{background-position:-290px -52px}
+                    .fAED{background-position:-185px -52px}.fPHP{background-position:-311px -52px}.fTRY{background-position:-353px -52px}
+                    .fHKD{background-position:-374px -52px}.fMXN{background-position:-395px -52px} 
+                    .breadcrumb {display: none}
+                    .grid,.wrapper {width: 100% !important}
+                    .clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0}
+                    .grid-cell {width: 100%;display: -moz-inline-stack;display: inline-block;vertical-align: middle;*vertical-align: auto;zoom: 1;
+	*display: inline;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin: 0;padding: 0 10px;vertical-align: top;
+	text-align: left;letter-spacing: normal;word-spacing: normal;text-rendering: auto}
+	                .modAlt {background-color: #f8f8f8;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc}
+	                select,textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"]
+	{
+	border: 1px solid #ccc;
+	display: inline-block;
+	color: #27456e;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	padding: 6px 4px;
+	font-size: 1em;
+	line-height: 16px
+}
+
+input[type="text"].currency-dropdown,input[type="text"].ac_input {
+	cursor: pointer;
+	border: 0;
+	border-right: 25px solid #fff;
+	outline: 1px solid #ccc;
+	outline-offset: 0
+}
+
+input[type="text"].currency-dropdown:focus,input[type="text"].currency-dropdown:active
+	{
+	border: 0;
+	border-right: 25px solid #fff;
+	outline: 1px solid #ccc;
+	outline-offset: 0
+}
+
+.currency-wrapper {
+	position: relative
+}
+
+.inptDrop {
+	color: #b2bbd0;
+	display: inline-block;
+	position: absolute;
+	right: 3px;
+	margin: 8px 5px 0 0
+}
+.ucc-form .inptWrap-ucc .currency-dropdown {
+	width: 100%
+}
+	               
+	                
+                    </STYLE>
+</head>
+
+
+<body>
+<div id="bodychild">
+	<div id="outercontainer">
+    
+        <!-- HEADER -->
+        <div id="outerheader">
+        	<div class="container">
+            <header id="top" class="twelve columns">
+            	<div id="logo"  class="three columns alpha"><a href="index.html"><img src="images/newlogo25.png" alt=""></a></div>
+                <section id="navigation" class="nine columns omega">
+                    <nav>
+                        <ul id="topnav" class="sf-menu">
+                            <li class="current"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="prediction.html">Prediction</a></li>
+                            <li><a href="advice.html">Advice</a></li>
+                            
+                            
+                            
+                            <li><a href="history.html">History</a></li>
+                           
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul><!-- topnav -->
+                    </nav><!-- nav -->	
+                    <div class="clear"></div>
+                </section>
+                <div class="clear"></div>
+            </header>
+            </div>
+        </div>
+        <!-- END HEADER -->
+        
+        <!-- SLIDER -->
+        <div id="outerslider">
+        	<div class="container">
+        	<div id="slidercontainer" class="twelve columns">
+            
+            	<section id="slider">
+                    <div id="slideritems" class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <img src="images/content/slide1.jpg" alt="" />
+                                <div class="flex-caption">
+                                    <h1>Regression for Prediction</h1>
+                                    
+                                    <a href="prediction.html" class="button">Read more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/content/slide2.jpg" alt="" />
+                                <div class="flex-caption">
+                                    <h1>Performance Analysis</h1>
+                                    
+                                    <a href="prediction.html" class="button">Read more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="images/content/slide3.jpg" alt="" />
+                                <div class="flex-caption">
+                                    <h1>Trading Advice</h1>
+                                   
+                                    <a href="advice.html" class="button">Read more</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                
+            </div>
+            </div>
+        </div>
+        <!-- END SLIDER -->
+        
+        <!-- MAIN CONTENT -->
+        <div id="outermain">
+        	<div class="container">
+        	<section id="maincontent" class="twelve columns">
+            	<section id="content" class="positionleft eight columns alpha">
+                    <article>
+                     <h2 class="smallmargin">Live Exchange Rates</h2>
+<script type="text/javascript" src="http://www.bloomberg.com/jscommon/calculators/currdata.js"></script>
+<table width="100%" border="0">
+<tr>
+<td colspan="2" class="xRatesTmr">
+<div class="xRctrMin">
+Auto-refresh
+<a href="#" id="autoRefreshHelp" title="Auto-refresh will stop in 15 minutes" onclick="return false;">
+15x
+</a>
+</div>
+<div class="xRatesTmrBx">
+<div class="xRatesTmrBxRt">
+<div class="xRctrSec">
+0 : <span class="countdown">59</span>
+</div>
+</div>
+</div>
+</td>
+<th scope='col'><a href='/currency/usd-us-dollar' class='flgBxPAD flgSprt fUSD'>USD</a></th>
+<th scope='col'><a href='/currency/eur-euro' class='flgBxPAD flgSprt fEUR'>EUR</a></th>
+<th scope='col'><a href='/currency/gbp-british-pound' class='flgBxPAD flgSprt fGBP'>GBP</a></th>
+<th scope='col'><a href='/currency/inr-indian-rupee' class='flgBxPAD flgSprt fINR'>INR</a></th>
+<th scope='col'><a href='/currency/aud-australian-dollar' class='flgBxPAD flgSprt fAUD'>AUD</a></th>
+<th scope='col'><a href='/currency/cad-canadian-dollar' class='flgBxPAD flgSprt fCAD'>CAD</a></th>
+<th scope='col'><a href='/currency/zar-south-african-rand' class='flgBxPAD flgSprt fZAR'>ZAR</a></th>
+<th scope='col'><a href='/currency/nzd-new-zealand-dollar' class='flgBxPAD flgSprt fNZD'>NZD</a></th>
+</tr>
+<tr class='liveRatesRw'>
+<th scope='row' rowspan='2' class=''>
+<a href='/currency/usd-us-dollar' class='flgBx flgSprt fUSD' title='USD'></a>
+</th>
+<td class="xRcol2w">1 <a >USD</a></td>
+<td class='rateCell'><div rel="USD,USD,1,1">1.00000</div></td>
+<td class='rateCell'><a href='/currencycharts/?from=USD&amp;to=EUR' rel='EUR,USD,1,2'><script type="text/javascript">document.write(price['EUR:CUR'].toPrecision(5));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=USD&amp;to=GBP' rel='GBP,USD,1,3'><script type="text/javascript">document.write(price['GBP:CUR'].toPrecision(5));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=USD&amp;to=INR' rel='INR,USD,1,4'><script type="text/javascript">document.write(price['INR:CUR'].toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=USD&amp;to=AUD' rel='AUD,USD,1,5'><script type="text/javascript">document.write(price['AUD:CUR'].toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=USD&amp;to=CAD' rel='CAD,USD,1,6'><script type="text/javascript">document.write(price['CAD:CUR'].toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=USD&amp;to=ZAR' rel='ZAR,USD,1,7'><script type="text/javascript">document.write(price['ZAR:CUR'].toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=USD&amp;to=NZD' rel='NZD,USD,1,8'><script type="text/javascript">document.write(price['NZD:CUR'].toPrecision(6));</script></a></td>
+</tr>
+<tr class=''>
+<td class=''>Inverse:</td>
+<td class='rateCell'>	<div rel="USD,USD,2,1">1.00000</div></td>
+<td class='rateCell'><a href='/currencycharts/?from=EUR&amp;to=USD' rel='USD,EUR,1,2'><script type="text/javascript">document.write((1/price['EUR:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=GBP&amp;to=USD' rel='USD,GBP,1,3'><script type="text/javascript">document.write((1/price['GBP:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=INR&amp;to=USD' rel='USD,INR,1,4'><script type="text/javascript">document.write((1/price['INR:CUR']).toPrecision(4));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=AUD&amp;to=USD' rel='USD,AUD,1,5'><script type="text/javascript">document.write((1/price['AUD:CUR']).toPrecision(5));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=CAD&amp;to=USD' rel='USD,CAD,1,6'><script type="text/javascript">document.write((1/price['CAD:CUR']).toPrecision(5));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=ZAR&amp;to=USD' rel='USD,ZAR,1,7'><script type="text/javascript">document.write((1/price['ZAR:CUR']).toPrecision(4));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=NZD&amp;to=USD' rel='USD,NZD,1,8'><script type="text/javascript">document.write((1/price['NZD:CUR']).toPrecision(5));</script></a></td>
+
+</tr>	<tr class='liveRatesRw'>
+<th scope='row' rowspan='2' class=''>
+<a href='/currency/eur-euro' class='flgBx flgSprt fEUR' title='EUR'></a>
+</th>
+<td class="xRcol2w">1 <a href='/currency/eur-euro'>EUR</a></td>
+<td class='rateCell'><a href='/currencycharts/?from=EUR&amp;to=USD' rel='USD,EUR,2,1'><script type="text/javascript">document.write((1/price['EUR:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'>	<div rel="EUR,EUR,2,2">1.00000</div></td>
+<td class='rateCell'><a href='/currencycharts/?from=EUR&amp;to=GBP' rel='GBP,EUR,2,3'><script type="text/javascript">document.write((price['GBP:CUR']/price['EUR:CUR']).toPrecision(5));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=EUR&amp;to=INR' rel='INR,EUR,2,4'><script type="text/javascript">document.write((price['INR:CUR']/price['EUR:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=EUR&amp;to=AUD' rel='AUD,EUR,2,5'><script type="text/javascript">document.write((price['AUD:CUR']/price['EUR:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=EUR&amp;to=CAD' rel='CAD,EUR,2,6'><script type="text/javascript">document.write((price['CAD:CUR']/price['EUR:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=EUR&amp;to=ZAR' rel='ZAR,EUR,2,7'><script type="text/javascript">document.write((price['ZAR:CUR']/price['EUR:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=EUR&amp;to=NZD' rel='NZD,EUR,2,8'><script type="text/javascript">document.write((price['NZD:CUR']/price['EUR:CUR']).toPrecision(6));</script></a></td>
+
+</tr>
+<tr class=''>
+<td class=''>Inverse:</td>
+<td class='rateCell'><a href='/currencycharts/?from=USD&amp;to=EUR' rel='EUR,USD,2,1'><script type="text/javascript">document.write(price['EUR:CUR'].toPrecision(5));</script></a></td>
+<td class='rateCell'>	<div rel="EUR,EUR,3,2">1.00000</div></td>
+<td class='rateCell'><a href='/currencycharts/?from=GBP&amp;to=EUR' rel='EUR,GBP,2,3'><script type="text/javascript">document.write((price['EUR:CUR']/price['GBP:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=INR&amp;to=EUR' rel='EUR,INR,2,4'><script type="text/javascript">document.write((price['EUR:CUR']/price['INR:CUR']).toPrecision(4));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=AUD&amp;to=EUR' rel='EUR,AUD,2,5'><script type="text/javascript">document.write((price['EUR:CUR']/price['AUD:CUR']).toPrecision(5));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=CAD&amp;to=EUR' rel='EUR,CAD,2,6'><script type="text/javascript">document.write((price['EUR:CUR']/price['CAD:CUR']).toPrecision(5));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=ZAR&amp;to=EUR' rel='EUR,ZAR,2,7'><script type="text/javascript">document.write((price['EUR:CUR']/price['ZAR:CUR']).toPrecision(4));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=NZD&amp;to=EUR' rel='EUR,NZD,2,8'><script type="text/javascript">document.write((price['EUR:CUR']/price['NZD:CUR']).toPrecision(5));</script></a></td>
+
+</tr>	<tr class='liveRatesRw'>
+<th scope='row' rowspan='2' class=''>
+<a href='/currency/gbp-british-pound' class='flgBx flgSprt fGBP' title='GBP'></a>
+</th>
+<td class="xRcol2w">1 <a href='/currency/gbp-british-pound'>GBP</a></td>
+<td class='rateCell'><a href='/currencycharts/?from=GBP&amp;to=USD' rel='USD,GBP,3,1'><script type="text/javascript">document.write((1/price['GBP:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=GBP&amp;to=EUR' rel='EUR,GBP,3,2'><script type="text/javascript">document.write((price['EUR:CUR']/price['GBP:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'>	<div rel="GBP,GBP,3,3">1.00000</div></td>
+<td class='rateCell'><a href='/currencycharts/?from=GBP&amp;to=INR' rel='INR,GBP,3,4'><script type="text/javascript">document.write((price['INR:CUR']/price['GBP:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=GBP&amp;to=AUD' rel='AUD,GBP,3,5'><script type="text/javascript">document.write((price['AUD:CUR']/price['GBP:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=GBP&amp;to=CAD' rel='CAD,GBP,3,6'><script type="text/javascript">document.write((price['CAD:CUR']/price['GBP:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=GBP&amp;to=ZAR' rel='ZAR,GBP,3,7'><script type="text/javascript">document.write((price['ZAR:CUR']/price['GBP:CUR']).toPrecision(6));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=GBP&amp;to=NZD' rel='ZAR,GBP,3,8'><script type="text/javascript">document.write((price['NZD:CUR']/price['GBP:CUR']).toPrecision(6));</script></a></td>
+
+</tr>
+<tr class=''>
+<td class=''>Inverse:</td>
+<td class='rateCell'><a href='/currencycharts/?from=USD&amp;to=GBP' rel='GBP,USD,3,1'><script type="text/javascript">document.write(price['GBP:CUR'].toPrecision(5));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=EUR&amp;to=GBP' rel='GBP,EUR,3,2'><script type="text/javascript">document.write((price['GBP:CUR']/price['EUR:CUR']).toPrecision(5));</script></a></td>
+<td class='rateCell'>	<div rel="GBP,GBP,4,3">1.00000</div></td>
+<td class='rateCell'><a href='/currencycharts/?from=INR&amp;to=GBP' rel='GBP,INR,3,4'><script type="text/javascript">document.write((price['GBP:CUR']/price['INR:CUR']).toPrecision(4));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=AUD&amp;to=GBP' rel='GBP,AUD,3,5'><script type="text/javascript">document.write((price['GBP:CUR']/price['AUD:CUR']).toPrecision(5));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=CAD&amp;to=GBP' rel='GBP,CAD,3,6'><script type="text/javascript">document.write((price['GBP:CUR']/price['CAD:CUR']).toPrecision(5));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=ZAR&amp;to=GBP' rel='GBP,ZAR,3,7'><script type="text/javascript">document.write((price['GBP:CUR']/price['ZAR:CUR']).toPrecision(4));</script></a></td>
+<td class='rateCell'><a href='/currencycharts/?from=NZD&amp;to=GBP' rel='GBP,ZAR,3,8'><script type="text/javascript">document.write((price['GBP:CUR']/price['NZD:CUR']).toPrecision(5));</script></a></td>
+
+</tr>	</table>
+                    </article>
+                    
+                    <div class="separator line"><div></div></div>
+                    
+                    <article>
+                    	<h2>Currency Converter</h2>
+                        <script src="http://www.bloomberg.com/jscommon/calculators/finance.js" language="javascript"></script>
+                        <script src="http://www.bloomberg.com/jscommon/calculators/mktscurrcalc.js" language="javascript"></script>
+<script type="text/javascript">
+function loadResults_my(){
+if ((navigator.appName.indexOf("Netscape") != -1)&& (parseInt(navigator.appVersion) == 4)) {
+   document.write('<DIV ID="crncyres2" style=" float:left; height:9px; margin:50px 30px;"></DIV>');
+} 
+else {
+   document.write('<DIV ID="crncyres" style=" float:left; height:9px; margin:50px 30px;"></DIV>');
+}
+}
+function ShowResult_my(fromval, toval, amount)
+{
+var totval = amount * toval / fromval;   //total conversion rate
+    var select1 = document.currcalc.from_tkc; //Base currency name from the HTML form
+    var select2 = document.currcalc.to_tkc;   //"Convert into" currency name from the HTML form
+var translate = document.currcalc.translation.value;
+var all_results =amount+" " 
+     + select1.options[select1.selectedIndex].text 
+     + ' = ' + round(totval)+" " 
+     + select2.options[select2.selectedIndex].text;
+
+//Print the results in Netscape 4.x versions
+if ((navigator.appName.indexOf("Netscape") != -1)&& (parseInt(navigator.appVersion) == 4)) {
+    var reslayer = document.layers['crncyres2'].document;
+    reslayer.open();
+    reslayer.write(all_results);
+    reslayer.close();
+     } 
+//Print the results in IE and Netscape 6.x versions
+else if ((navigator.appName.indexOf("Microsoft") != -1) || 
+    (parseInt(navigator.appVersion) >= 5)){
+    document.getElementById("crncyres").innerHTML = all_results;
+    } 
+//Print an error message for other browsers not supporting the DOM
+else {
+   alert(errmsg3);
+}
+}
+function calculate()
+{
+    var select1 = document.currcalc.from_tkc; 
+    var select2 = document.currcalc.to_tkc;    
+    var select1_text = select1[select1.selectedIndex].text;
+    var select2_text = select2[select2.selectedIndex].text;
+    var fromval;    //Value of the currency to be converted
+    var toval;        //Value of the currency to convert into
+    //These error messages are hidden values in the HTML page
+    //They get translated into foreign languages
+    var errmsg1 = document.currcalc.translation1.value;
+    var errmsg2 = document.currcalc.translation2.value;
+    var errmsg3 = document.currcalc.translation3.value;
+      //calculate the fixed Euro value
+     if (select1_text.match(/\(EUR\)/) != null)
+     {
+         var temp = select2_text.split("(");
+         var lastsplit = temp.length - 1;
+         var result = temp[lastsplit].match(/(FRF|ATS|PTE|ESP|BEF|NLG|FIM|DEM|IEP|ITL|LUF|GRD)/);
+         if (result != null)
+         {
+            fromval = 1;
+            toval = eurovals[result[0]];
+         }
+     }
+    
+      //calculate the fixed Euro value
+     if (select2_text.match(/\(EUR\)/) != null)
+     {
+         var tmp = select1_text.split("(");
+        var lstsplit = tmp.length - 1;
+        var result = tmp[lstsplit].match(/(FRF|ATS|PTE|ESP|BEF|NLG|FIM|DEM|IEP|ITL|LUF|GRD)/);
+         if (result != null)
+         {
+            toval = 1;
+            fromval = eurovals[result[0]];
+        }
+     }
+    
+     //set the prices
+     if (fromval == null && toval == null)            
+     {
+           fromval = price[select1[select1.selectedIndex].value];
+          toval = price[select2[select2.selectedIndex].value];
+        
+     }
+    
+     //check to make sure that there is a valid price/ valid currency for each
+     if ((fromval < 0) || (fromval == "") || isNaN(fromval) || (toval < 0) || (toval == "") || isNaN(toval)){
+        alert(errmsg1);
+        return false;
+     }
+    //assign the amount and check that it is valid, remove any punctuation
+    //amount is the number of the base currency units specified by the user
+    var amount = document.currcalc.amount.value;
+    if ((amount == "") || isNaN(amount) || (amount == 0) || (amount < 1)){
+         alert(errmsg2);
+        document.currcalc.amount.focus();
+        return false;
+    }
+       var pattern = /,/g;
+       amount = amount.replace(pattern, "");
+    
+    //show all results
+    ShowResult_my(fromval, toval, amount);
+}
+//window.onload = calculate;
+</script>
+<div id="crncycalc">
+<form name="currcalc" onSubmit="calculate(); return false;">
+<input type=HIDDEN name="flag" value=0>
+<input type=HIDDEN name="result" value=1>
+<input type=HIDDEN name="d_list" value=1>
+<input type=HIDDEN name="version" value="us">
+<input type=HIDDEN name="exp2" value="us1">
+<input type=HIDDEN name="displayres" value=" GBP">
+<input type=HIDDEN name="disptkc" value="British Pound">
+<input type=HIDDEN name=T value="markets_curr99.ht">
+<input type=HIDDEN name=TZ>
+<input type=HIDDEN name="translation" value="">
+<input type=HIDDEN name="translation1" value="您的选择出现了一点问题，请重新选择两种货币再试。">
+<input type=HIDDEN name="translation2" value="请输入一个合法的货币数量。">
+<input type=HIDDEN name="translation3" value="该转换工具只能在 Netscape Navigator 或者 Microsoft Internet Explorer 4.0 以上版本中使用。">
+
+<div align="left" style="width:630px; float:left; height:8px; float:left; margin-top:3px;  ">
+amount:
+<input type="text" name="amount" value="100.00" size="15">&emsp;
+<select class="ccDbx" name="from_tkc" id="from" size="1" tabindex="3">
+<option value='AUD:CUR'>AUD - Australian Dollar</option>
+<option value='CAD:CUR'>CAD - Canadian Dollar</option>
+<option value='CHF:CUR'>CHF - Swiss Franc</option>
+<option value='CNY:CUR'>CNY - Chinese Yuan Renminbi</option>
+<option value='DKK:CUR'>DKK - Danish Krone</option>
+<option value='EUR:CUR'>EUR - Euro</option>
+<option value='GBP:CUR' selected="selected">GBP - British Pound</option>
+<option value='HKD:CUR'>HKD - Hong Kong Dollar</option>
+<option value='HUF:CUR'>HUF - Hungarian Forint</option>
+<option value='INR:CUR'>INR - Indian Rupee</option>
+<option value='JPY:CUR'>JPY - Japanese Yen</option>
+<option value='MXN:CUR'>MXN - Mexican Peso</option>
+<option value='MYR:CUR'>MYR - Malaysian Ringgit</option>
+<option value='NOK:CUR'>NOK - Norwegian Krone</option>
+<option value='NZD:CUR'>NZD - New Zealand Dollar</option>
+<option value='PHP:CUR'>PHP - Philippine Peso</option>
+<option value='RUB:CUR'>RUB - Russian Ruble</option>
+<option value='SEK:CUR'>SEK - Swedish Krona</option>
+<option value='SGD:CUR'>SGD - Singapore Dollar</option>
+<option value='THB:CUR'>THB - Thai Baht</option>
+<option value='TRY:CUR'>TRY - Turkish Lira</option>
+<option value='USD:CUR'>USD - US Dollar</option>
+<option value='ZAR:CUR'>ZAR - South African Rand</option>
+</select>
+<script type="text/javascript">
+$("#fromInput").html("<input type='text' id='from' class='currency-dropdown' tabindex='3'/><input type='hidden' name='From' id='from_var' value='GBP'/><a href='#' id='from_sc' class='inptDrop'></a>");
+options.customizeCurrency = null;
+options.allowObsolete = true;
+options.obsoleteTitle = "obsolete";
+options.expiringTitle = "expiring";
+options.inputTip = "Please choose a currency ...";
+options.cacheLength = currenciesArray.length;
+options.selectLast = true;
+options.resultsClass = 'ac_results';
+options.onTabLoseFocus = '1';
+options.filterOutList = null;
+var recentListCookie = $.cookie('fromCurrencies');
+var fromRecentList = recentListCookie != null? recentListCookie.split(',') : 'USD,EUR,GBP,INR,AUD,CAD,SGD'.split(',');
+options.recentList = fromRecentList;
+options.searchHelp = "Type to search ...";
+options.recentListTitle = "Recent";
+options.allListTitle = "All Currencies";
+$('#from').autocomplete(allCurrenciesArray, options).result(onUCCSelect);
+setUCCInputValue($('#from'), options.recentList[0]);
+</script>
+
+<select name="to_tkc" size="1">
+<option value='AUD:CUR'>AUD - Australian Dollar</option>
+<option value='CAD:CUR'>CAD - Canadian Dollar</option>
+<option value='CHF:CUR'>CHF - Swiss Franc</option>
+<option value='CNY:CUR'>CNY - Chinese Yuan Renminbi</option>
+<option value='DKK:CUR'>DKK - Danish Krone</option>
+<option value='EUR:CUR'>EUR - Euro</option>
+<option value='GBP:CUR' selected="selected">GBP - British Pound</option>
+<option value='HKD:CUR'>HKD - Hong Kong Dollar</option>
+<option value='HUF:CUR'>HUF - Hungarian Forint</option>
+<option value='INR:CUR'>INR - Indian Rupee</option>
+<option value='JPY:CUR'>JPY - Japanese Yen</option>
+<option value='MXN:CUR'>MXN - Mexican Peso</option>
+<option value='MYR:CUR'>MYR - Malaysian Ringgit</option>
+<option value='NOK:CUR'>NOK - Norwegian Krone</option>
+<option value='NZD:CUR'>NZD - New Zealand Dollar</option>
+<option value='PHP:CUR'>PHP - Philippine Peso</option>
+<option value='RUB:CUR'>RUB - Russian Ruble</option>
+<option value='SEK:CUR'>SEK - Swedish Krona</option>
+<option value='SGD:CUR'>SGD - Singapore Dollar</option>
+<option value='THB:CUR'>THB - Thai Baht</option>
+<option value='TRY:CUR'>TRY - Turkish Lira</option>
+<option value='USD:CUR'>USD - US Dollar</option>
+<option value='ZAR:CUR'>ZAR - South African Rand</option>
+</select>
+<input type="button" name="cal" value="CONVERT" onClick="calculate()">
+</div>
+<div>
+<h3><script>loadResults_my();calculate();</script></h3>
+</div>
+</form>
+</div>
+                    </article>
+				</section>
+                
+                <!-- <aside id="sidebar" class="positionright four columns omega">
+                    <ul>
+                        <li class="widget-container">
+                            <h2 class="widget-title">From The Blog</h2>
+                            <ul class="lp-widget">
+                                <li>
+                                	<img src="images/icon/date.png" alt="" class="alignleft" />
+                                    <div class="lp">
+                                        <h3><a href="#">Nullam consequat ornare orci</a></h3>
+                                        <span class="smalldate">April 25, 2012&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">1 Comment</a></span>
+                                        <span>Pellentesque auctor vehicula sapien, et lacinia neque convallis ac. Curabitur porttitor laoreet metus...</span>
+                                    </div>
+                                </li>
+                                <li>
+                                	<img src="images/icon/date.png" alt="" class="alignleft" />
+                                    <div class="lp">
+                                        <h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+                                        <span class="smalldate">April 23, 2012&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">1 Comment</a></span>
+                                        <span>Pellentesque auctor vehicula sapien, et lacinia neque convallis ac. Curabitur porttitor laoreet metus...</span>
+                                    </div>
+                                </li>
+                                <li>
+                                	<img src="images/icon/date.png" alt="" class="alignleft" />
+                                    <div class="lp">
+                                        <h3><a href="#">Aliquam congue nibh sit</a></h3>
+                                        <span class="smalldate">April 20, 2012&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">1 Comment</a></span>
+                                        <span>Pellentesque auctor vehicula sapien, et lacinia neque convallis ac. Curabitur porttitor laoreet metus...</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="widget-container">
+                        	<div class="textwidget greybox">
+                            <p><img src="images/icon/pdf.png" alt="" class="alignleft" />Download, fill out and submit the
+								design brief!<br>
+								<a href="#">click here to download</a></p>
+                            </div>
+                      	</li>
+                 	</ul>
+				</aside>	 -->
+                <div class="clear"></div> 
+            </section>
+            </div>
+        </div>
+        <!-- END MAIN CONTENT -->
+        
+        <!-- AFTER CONTENT -->
+        <div id="outeraftercontent">
+            <div class="container">
+            <div id="aftercontent" class="twelve columns">
+                <section id="afterthecontent">
+                    <ul class="sn">
+                        <li><a title="Facebook" href="http://facebook.com/"><span style="background:url(images/social/facebook.png)" class="icon-img"></span></a></li>
+                        <li><a title="Twitter" href="http://twitter.com/"><span style="background:url(images/social/twitter.png)" class="icon-img"></span></a></li>
+                        <li><a title="StumbleUpon" href="http://stumbleupon.com/"><span style="background:url(images/social/stumbleupon.png)" class="icon-img"></span></a></li>
+                        <li><a title="Youtube" href="http://youtube.com/"><span style="background:url(images/social/youtube.png)" class="icon-img"></span></a></li>
+                        <li><a title="Lastfm" href="http://www.last.fm/"><span style="background:url(images/social/lastfm.png)" class="icon-img"></span></a></li>
+                    </ul>
+                    <address class="addr">EECS6893 Big Data Analytis<br>Group:<FINANCE> Exchange Rates and Analysis</></address>
+                </section>
+            </div>
+            </div>
+        </div>
+        <!-- END AFTER CONTENT -->
+        
+        <!-- FOOTER -->
+        <div id="outerfooter">
+        	<div class="container">
+        	<div id="footercontainer" class="twelve columns">
+            	<footer id="footer">&copy; Copyright &copy; 2014.All rights reserved.</footer>
+            </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        
+	</div><!-- end bodychild -->
+</div><!-- end outercontainer -->
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+
+<!-- jQuery Superfish -->
+<script type="text/javascript" src="js/hoverIntent.js"></script> 
+<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/supersubs.js"></script>
+
+<!-- jQuery Flexslider -->
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
+<!-- jQuery Dropdown Mobile -->
+<script type="text/javascript" src="js/tinynav.min.js"></script>
+
+<!-- Custom Script -->
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript">
+jQuery(window).load(function() {
+    jQuery('.flexslider').flexslider({
+          animation: "slide",              //String: Select your animation type, "fade" or "slide"
+		  slideDirection: "vertical",   //String: Select the sliding direction, "horizontal" or "vertical"
+		  directionNav: false, //Boolean: Create navigation for previous/next navigation? (true/false)
+		  controlNav: true  //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+        });
+});
+</script>	
+
+<!-- Demo Switcher -->
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/switcher.js"></script>
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
